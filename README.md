@@ -1,5 +1,3 @@
-# Название сценария
+# Редактирование изображений для сайтов с помощью приложения Thumbor в кластере Yandex Managed Service for Kubernetes®
 
-Описание сценария и инструкция по его применению.
-
-Для практических руководств обязательна ссылка на документацию.
+Вы можете установить приложение [Thumbor](https://thumbor.readthedocs.io/en/latest) в кластер [Managed Service for Kubernetes®](https://yandex.cloud/ru/docs/managed-kubernetes), а затем с его помощью редактировать изображения, загруженные в [Yandex Object Storage](https://yandex.cloud/ru/docs/storage). Подготовка инфраструктуры для Managed Service for Kubernetes® и Object Storage через Terraform описана в [практическом руководстве](https://cloud.yandex.ru/ru/docs/managed-kubernetes/tutorials/marketplace/thumbor), необходимые для настройки конфигурационные файлы [k8s-for-thumbor.tf](k8s-for-thumbor.tf) и [images-for-thumbor.tf](images-for-thumbor.tf) расположены в этом репозитории.
