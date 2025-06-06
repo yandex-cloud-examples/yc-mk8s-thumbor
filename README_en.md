@@ -1,0 +1,3 @@
+# Editing website images using Thumbor in a Yandex Managed Service for Kubernetes® cluster
+
+You can install the [Thumbor](https://thumbor.readthedocs.io/en/latest) app into a [Managed Service for Kubernetes®](https://yandex.cloud/docs/managed-kubernetes) cluster to edit images uploaded to the [Yandex Object Storage](https://yandex.cloud/docs/storage). See this [tutorial](https://yandex.cloud/docs/managed-kubernetes/tutorials/marketplace/thumbor) to learn how to prepare the infrastructure for Managed Service for Kubernetes® and Object Storage using Terraform. This repository contains the configuration files you will need: [k8s-for-thumbor.tf](k8s-for-thumbor.tf) and [images-for-thumbor.tf](images-for-thumbor.tf).
