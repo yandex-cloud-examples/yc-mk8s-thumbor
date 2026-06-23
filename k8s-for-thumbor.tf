@@ -220,6 +220,12 @@ resource "yandex_storage_bucket" "image-bucket" {
   access_key = yandex_iam_service_account_static_access_key.sa-static-key.access_key
   secret_key = yandex_iam_service_account_static_access_key.sa-static-key.secret_key
   bucket     = local.bucket_name
+}
+
+resource "yandex_storage_bucket_grant" "image-bucket-grant" {
+  bucket     = yandex_storage_bucket.image-bucket.bucket
+  access_key = yandex_iam_service_account_static_access_key.sa-static-key.access_key
+  secret_key = yandex_iam_service_account_static_access_key.sa-static-key.secret_key
   grant {
     id          = yandex_iam_service_account.k8s-sa.id
     type        = "CanonicalUser"
